@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MISSION">
+  <title>MISSION CONTROL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <div id="view-dashboard" class="app-view active">
+      <div class="app-header">
+        <div class="mission-title">MISSION CONTROL</div>
+        <div class="operator-tag">OPERATOR</div>
+      </div>
+
+      <div class="cycle-card">
+        <div class="cycle-label">Current Cycle (Tap to Fix)</div>
+        <div class="cycle-day">Day 1<span>/ 66</span></div>
+        <div class="cycle-sub">The Core Loop</div>
+      </div>
+
+      <div class="section-title">Daily Operations</div>
+      
+      <div class="add-task-area">
+        <input type="text" id="task-input" placeholder="新しいミッション名...">
+        <button onclick="addNewTask()" class="add-btn">＋ 追加</button>
+      </div>
+
+      <div id="dynamic-mission-list">
+        <div class="task-card">
+          <div class="task-info">
+            <div class="task-name">Workout (Heavy Lifting)</div>
+            <div class="task-goal">Goal 4 sets / 30 mins</div>
+          </div>
+          <button class="start-btn">START</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
